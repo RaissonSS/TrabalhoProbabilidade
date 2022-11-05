@@ -1,18 +1,80 @@
-/* Error: expected "{".
- *   ,
- * 2 |     main-conte
- *   |               ^
- *   '
- *   sass\index.scss 2:15  @import
- *   sass\style.scss 2:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 2 \2502      main-conte\d\a   \2502                ^\a   \2575 \a   sass\\index.scss 2:15  @import\a   sass\\style.scss 2:9   root stylesheet';
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  max-height: 100vh;
+  height: 100vh;
 }
+body header {
+  height: 8vh;
+  width: 100vw;
+  background-color: #4169e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header a {
+  color: #001963;
+}
+body .main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #708cde;
+  gap: 60px;
+  height: 100%;
+}
+body .main-content p, body .main-content h3 {
+  color: black;
+}
+body .main-content .quest01 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #002184 solid;
+  border-radius: 30px;
+  width: 150px;
+  height: 250px;
+  gap: 10px;
+}
+body .main-content .quest01 .quest01-top {
+  text-align: center;
+}
+body .main-content .quest01 .quest01-body {
+  text-align: left;
+}
+body .main-content .quest02 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #002184 solid;
+  border-radius: 30px;
+  width: 150px;
+  height: 250px;
+  gap: 10px;
+}
+body .main-content .quest02 .quest02-top {
+  text-align: center;
+}
+body .main-content .quest02 .quest02-body {
+  text-align: left;
+}
+body .main-content .quest03 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #002184 solid;
+  border-radius: 30px;
+  width: 150px;
+  height: 250px;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+body .main-content .quest03 img {
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */
