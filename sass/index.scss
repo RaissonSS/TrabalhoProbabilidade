@@ -1,80 +1,82 @@
-body {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    max-height: 100vh;
+@import "./common.scss";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     height: 100vh;
 
     header {
         height: 8vh;
-        width: 100vw;
-        background-color: #4169e1;
+        background-color: #005937;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
 
         a {
-            color: #001963;
+            color: lightgreen;
         }
     }
 
     .main-content {
+        height: 100vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 50px;
         background-color: #708cde;
-        gap: 60px;
-        height: 100%;
+        gap: 90px;
+
+        background-size: 300% 300%;
+        background-image: linear-gradient(
+            -45deg, 
+            #005937 0%, 
+            #1B5941 25%, 
+            #00A666 51%, 
+            #00DA85 100%
+        );  
+        animation: AnimateBG 20s ease infinite;
 
         p, h3 {
             color: black;
         }
 
-        .quest01 {
+        .quest {
             padding: 30px;
             display: flex;
             flex-direction: column;
-            border: 3px #002184 solid;
+            border: 3px #1B5941 solid;
             border-radius: 30px;
-            width: 150px;
+            width: 200px;
             height: 250px;
-            gap: 10px;
-            
-            .quest01-top {
+            gap: 30px;
+            transition: 1s;
+
+            .quest-top {
                 text-align: center;
+                background-color: #00A666;
+                padding: 10px;
+                border-radius: 20px;
+                transition: 1s;
             }
-            .quest01-body {
-                text-align: left;
+            
+            .quest-body {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #43DFA3;
+                transition: 1s;
+                .quest-top { background-color: #1B5941; transition: 0.5s; }
             }
         }
-        .quest02 {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            border: 3px #002184 solid;
-            border-radius: 30px;
-            width: 150px;
-            height: 250px;
-            gap: 10px;
-            
-            .quest02-top {
-                text-align: center;
-            }
-            .quest02-body {
-                text-align: left;
-            }
-        }
+
         .quest03 {
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            border: 3px #002184 solid;
-            border-radius: 30px;
-            width: 150px;
-            height: 250px;
-            gap: 10px;
             text-align: center;
             justify-content: center;
 

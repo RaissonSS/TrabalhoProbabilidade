@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+}
+.content header {
+  height: 8vh;
+  background-color: #005937;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content header a {
+  color: lightgreen;
+}
+.content .main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #708cde;
+  gap: 90px;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #005937 0%, #1B5941 25%, #00A666 51%, #00DA85 100%);
+  animation: AnimateBG 20s ease infinite;
+}
+.content .main-content p, .content .main-content h3 {
+  color: black;
+}
+.content .main-content .quest {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 3px #1B5941 solid;
+  border-radius: 30px;
+  width: 200px;
+  height: 250px;
+  gap: 30px;
+  transition: 1s;
+}
+.content .main-content .quest .quest-top {
+  text-align: center;
+  background-color: #00A666;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 1s;
+}
+.content .main-content .quest .quest-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.content .main-content .quest:hover {
+  cursor: pointer;
+  background-color: #43DFA3;
+  transition: 1s;
+}
+.content .main-content .quest:hover .quest-top {
+  background-color: #1B5941;
+  transition: 0.5s;
+}
+.content .main-content .quest03 {
+  text-align: center;
+  justify-content: center;
+}
+.content .main-content .quest03 img {
+  align-self: center;
+}
+
+/*# sourceMappingURL=styleIndex.css.map */
