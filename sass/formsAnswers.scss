@@ -1,1 +1,140 @@
 @import "./common.scss";
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        background-color: #005937;
+
+        a {
+            color: lightgreen;
+        }
+    }
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        padding: 30px;
+        justify-content: space-around;
+        align-items: center;
+
+        background-size: 300% 300%;
+        background-image: linear-gradient(
+            -45deg, 
+            #005937 0%, 
+            #1B5941 25%, 
+            #00A666 51%, 
+            #00DA85 100%
+        );  
+        animation: AnimateBG 20s ease infinite;
+
+        .graphic {
+            display: grid;
+            flex-direction: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-areas: "top pizza" "bottom pizza";
+            height: fit-content;
+            padding: 30px;
+            background-color: #005937;
+            border-radius: 60px;
+
+            .graphic-top {
+                grid-area: top;
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #00A666;
+            }
+
+            .graphic-bottom {
+                grid-area: bottom;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+
+                p {
+                    color: #00DA85;
+                }
+
+                #graph01-a {
+                    color: red;
+                }
+                #graph01-b {
+                    color: lightblue;
+                }
+                #graph01-c {
+                    color: yellow;
+                }
+                #graph02-a {
+                    color: goldenrod;
+                }
+                #graph02-b {
+                    color: violet;
+                }
+                #graph02-c {
+                    color: gray;
+                }
+            }
+
+            .pizza {
+                grid-area: pizza;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                padding: 30px;
+
+                h2 {
+                    color: #1B5941;
+                }
+
+                .piechart01 {
+                    /*margin-top: 300px;
+                    display: block;
+                    position: absolute;*/
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    background-image: conic-gradient(
+                        red 100deg, 
+                        lightblue 0 200deg, 
+                        yellow 0);
+                }
+
+                .piechart02 {
+                    /*margin-top: 300px;
+                    display: block;
+                    position: absolute;*/
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    background-image: conic-gradient(
+                        goldenrod 100deg, 
+                        violet 0 200deg, 
+                        gray 0);
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        background-color: #005937;
+
+        h3 {
+            color: lightgreen;
+        }
+    }
+}
