@@ -105,7 +105,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: conic-gradient(goldenrod 100deg, violet 0 200deg, gray 0);
+  background-image: conic-gradient(goldenrod 150deg, violet 0 200deg, gray 0);
 }
 .content footer {
   display: flex;
